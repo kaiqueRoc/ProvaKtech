@@ -45,7 +45,7 @@ $(document).ready(function () {
     });
 
     $("#selectMotor").on('change', function () {
-        //Quando na opção Select limpa os campos
+       
         if ($('#selectMotor').val() === 'SelecionarCarro') {
             $("#marcaCarro").val('');
             $("#modeloCarro").val('');
@@ -58,7 +58,7 @@ $(document).ready(function () {
             $("#obsCarro").addClass('d-none')
         }
 
-        for (let i = 0; i < carros.length; i++) { //Percorre o vetor carros atribuindo cada carro ao seu respectivo input
+        for (let i = 0; i < carros.length; i++) { 
             if (carros[i]["id"] === parseInt($("#selectMotor").val())) {
                 $("#IdCarro").val(carros[i]["id"]);
                 $("#marcaCarro").val(carros[i]["marca"]);
@@ -86,7 +86,7 @@ $(document).ready(function () {
             }
         }
 
-        $('#removeCarro').on('click', function () { //Remove do array os carros
+        $('#removeCarro').on('click', function () { 
             $('#RemoveCar').removeClass('d-none');
             $('#selectMotor option[value=' + ($('#selectMotor').val()) + ']' ).remove();
             $('#marcaCarro').val('');
