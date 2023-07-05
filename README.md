@@ -1,5 +1,5 @@
 # ProvaKtech
-Avaliação dev junior
+Avaliação dev
  
 
 # Guia de documentos
